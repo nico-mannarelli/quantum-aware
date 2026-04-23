@@ -42,7 +42,7 @@ Results land in `results/raw/` (JSON) and `results/processed/` (CSV + plots).
 |---|---|
 | `depth` | Transpiled circuit depth |
 | `gate_count` | Total gate count after transpilation |
-| `two_qubit_gate_count` | CX/ECR/CZ count — main noise proxy |
+| `two_qubit_gate_count` | CX/ECR/CZ count - main noise proxy |
 | `transpile_time_s` | Time to run the pass manager |
 | `runtime_s` | Time to execute on simulator |
 | `quality_score` | GHZ: P(00..0) + P(11..1); QAOA: approximation ratio |
@@ -50,12 +50,12 @@ Results land in `results/raw/` (JSON) and `results/processed/` (CSV + plots).
 ## Backends
 
 **Qiskit (primary)**
-- `ideal_simulator` — AerSimulator, no noise
-- `fake_nairobi` — 7-qubit IBM fake backend with realistic noise model
-- `fake_lagos` — 7-qubit IBM fake backend (different topology)
+- `ideal_simulator` - AerSimulator, no noise
+- `fake_nairobi` - 7-qubit IBM fake backend with realistic noise model
+- `fake_lagos` - 7-qubit IBM fake backend (different topology)
 
 **Amazon Braket (secondary, optional)**
-- `braket_local` — LocalSimulator, no noise, exact state vector
+- `braket_local` - LocalSimulator, no noise, exact state vector
 
 ## Project structure
 
