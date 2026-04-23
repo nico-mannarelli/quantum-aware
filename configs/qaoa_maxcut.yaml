@@ -1,0 +1,15 @@
+name: qaoa_maxcut
+description: QAOA for Max-Cut on a small random graph
+qubit_counts: [4, 6]
+shots: 1024
+qaoa_layers: 1
+optimization_levels: [0, 1, 2, 3]
+graph_seed: 42
+backends:
+  qiskit:
+    - ideal_simulator
+    - fake_nairobi
+    - fake_lagos
+  braket:
+    - local_simulator
+quality_metric: approximation_ratio

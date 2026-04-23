@@ -1,0 +1,13 @@
+name: ghz
+description: GHZ state preparation and measurement
+qubit_counts: [3, 5, 7]
+shots: 1024
+optimization_levels: [0, 1, 2, 3]
+backends:
+  qiskit:
+    - ideal_simulator
+    - fake_nairobi
+    - fake_lagos
+  braket:
+    - local_simulator
+quality_metric: ghz_fidelity
